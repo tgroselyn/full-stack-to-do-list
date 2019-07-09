@@ -1,0 +1,75 @@
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 16px;
+    background-color: whitesmoke;
+}
+
+header {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.jumbotron {
+    padding: 20px !important;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-family: Impact, sans-serif;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: dimgray;
+    padding: 20px;
+}
+
+label {
+    font-size: 12px !important;
+    text-transform: uppercase;
+    text-align: left !important;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table td {
+    padding: 10px;
+    margin: 0;
+}
+
+.checkedRow {
+    background-color: #BBDEEF !important;
+}
+
+.priority1 {
+    background-color: #FDC6BC;
+}
+
+.priority2 {
+    background-color: #FDDBBC;
+}
+
+.priority3 {
+    background-color: #FDEDBC;
+}
+
+#taskIn, #dueDateIn, #priorityIn {
+    width: 100%;
+}
+
+#addBtn {
+    width: 100%;
+}
+
+label[for="addBtn"] {
+    visibility: hidden;
+}

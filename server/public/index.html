@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./vendors/jquery-3.4.0.js"></script>
+    <script src="./scripts/client.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./views/style.css">
+    <title>task simple - Thomas Roselyn</title>
+</head>
+<body>
+    <div class="container">
+        <header class="jumbotron">
+            <h1 class="display-4">task simple</h1>
+            <p class="lead">a simple way to add and organize tasks</p>
+        </header>
+        <main>
+            <h2>- - Add a new task - -</h2>
+            <div id="addTaskArea" class="form-group form-inline">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <label for="taskIn" class="col-form-label">Task</label>
+                    <input id="taskIn" class="form-control" type="text" placeholder="name / description">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <label for="dueDateIn" class="col-form-label">Due Date</label>
+                    <input id="dueDateIn" class="form-control" type="date">
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6">
+                    <label for="priorityIn" class="col-form-label">Priority Level</label>
+                    <select id="priorityIn" class="form-control">
+                        <option value="1" selected="selected">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <label for="addBtn" class="col-form-label">Add Task</label>
+                    <button id="addBtn" class="btn btn-success">Add Task</button>
+                </div>
+            </div>
+            <div id="taskListArea">
+                <h2>- - View / edit tasks - -</h2>
+                <table id="taskListTable" class="table">
+                    <thead class="thead thead-dark">
+                        <th>Task Name / Description</th>
+                        <th>Due Date</th>
+                        <th>Priority Level</th>
+                        <th>Complete</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="taskListTableBody">
+                        <!-- jQuery will append todo list items here -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
