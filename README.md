@@ -29,7 +29,7 @@ Steps to get the development environment running.
 
 ## Screen Shot
 
-![screenshot of app](public/images/screenshot.png)
+![screenshot of app](server/public/images/screenshot.png)
 
 ## Documentation
 
